@@ -120,7 +120,7 @@ def gradient(func_name, method, config, state=None):
             grads = findiff(config, state)
 
         elif method == "DIRECTDIFF":
-            grad = directdiff(config, state)
+            grads = directdiff(config, state)
 
         else:
             raise Exception("unrecognized gradient method")
